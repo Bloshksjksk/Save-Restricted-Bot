@@ -11,9 +11,9 @@ import json
 with open('config.json', 'r') as f: DATA = json.load(f)
 def getenv(var): return os.environ.get(var) or DATA.get(var, None)
 
-bot_token =getenv("TOKEN","7396159812:AAF0IuB--4BkARnbot77f9MyIPQ8i4TU4qU")
-api_hash = getenv("HASH","7332581630:AAESyLZ74R9W9q1oILVTx8yyvryzzO4EqAQ") 
-api_id = getenv("ID","27498866")
+bot_token =getenv("TOKEN")
+api_hash = getenv("HASH") 
+api_id = getenv("ID")
 bot = Client("mybot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
 ss = getenv("STRING","BQAQBPh4AgkOITh42NV27RKBlBSKp9fEjJU90Pml_1blqjukrHkGnAmL77X0oPMaaO4U84v_UaRSwTT0LSJnQ7abB2vCs0Pnklw_5RK9m66vBNEr53YFzNFjck90n6Ur8rclCewFm5ykmF23hkr25vEs1DyGGKAmnvjxts79XtdUfSaJRcdF8Fx0vNFaC3jHr2GRKQUli7UbytzFbL8IdmXNNQ5fPRt2X13pIG2nadElZubfKpgnmSrumFOy4_13fegc92kKGeS9HZAT4nM7xUqYOQ71mdIFLk9NCXIaqXxwOagDnVDYCICCwCA2Kb565kFsMOcxvfT25dCv0VVY95DNAAAAAWxZIxwA")
